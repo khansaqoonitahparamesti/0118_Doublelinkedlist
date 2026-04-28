@@ -120,7 +120,9 @@ public:
                 current->next->prev = current->prev;
         }
 
-        
+        // Step 6: delete the node
+        delete current;
+        cout << "Record with roll number " << rollNo << " deleted" << endl;
     }
 
     void traverse()
