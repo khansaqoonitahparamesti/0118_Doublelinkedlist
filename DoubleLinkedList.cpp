@@ -133,6 +133,9 @@ public:
             return;
         }
 
+        // Step 1: point first node as currentNode
+        Node *currentNode = START;
+
         
     }
 
