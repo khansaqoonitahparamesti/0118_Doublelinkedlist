@@ -68,7 +68,15 @@ public:
             return;
         }
 
-        
+        // Step 9: insert between current and current->next
+        newNode->next = current->next; // Step 10: newNode->next = current.next
+        newNode->prev = current;       // Step 11: newNode->prev = current
+
+        // insert last node
+        if (current->next != NULL)
+            current->next->prev = newNode; // Step 12: current.next->prev = newNode
+
+        current->next = newNode; // Step 13: current.next = newNode
     }
 
     void hapus()
